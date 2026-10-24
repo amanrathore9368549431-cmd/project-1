@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zomato - Food Delivery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <a class="logo" href="#">zomato</a>
+    <form class="search-box" id="searchForm">
+      <span>📍</span>
+      <input id="location" placeholder="Enter your location">
+      <span class="separator">|</span>
+      <input id="search" placeholder="Search restaurants or food">
+      <button type="submit">🔍</button>
+    </form>
+    <div class="nav-links">
+      <a href="#restaurants">Restaurants</a>
+      <a href="#about">About</a>
+      <button id="loginBtn" class="login-btn">Log in</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Discover the best food & drinks</h1>
+        <p>Find your favourite restaurants and order delicious food.</p>
+        <form id="heroForm" class="hero-search">
+          <input id="heroInput" placeholder="Search for biryani, pizza, burgers...">
+          <button type="submit">Search</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="container order-options">
+      <article class="option">
+        <div class="option-img">🍕</div>
+        <h3>Order Online</h3>
+        <p>Stay home and order your favourite food.</p>
+      </article>
+      <article class="option">
+        <div class="option-img">🍽️</div>
+        <h3>Dining</h3>
+        <p>Explore restaurants for a great dining experience.</p>
+      </article>
+      <article class="option">
+        <div class="option-img">🎉</div>
+        <h3>Special Offers</h3>
+        <p>Discover meals and exciting food deals.</p>
+      </article>
+    </section>
+
+    <section class="container">
+      <h2>What's on your mind?</h2>
+      <div class="categories">
+        <button class="category active" data-category="All">
+          <span>🍽️</span>All
+        </button>
+        <button class="category" data-category="Pizza">
+          <span>🍕</span>Pizza
+        </button>
+        <button class="category" data-category="Burger">
+          <span>🍔</span>Burger
+        </button>
+        <button class="category" data-category="Biryani">
+          <span>🍛</span>Biryani
+        </button>
+        <button class="category" data-category="Chinese">
+          <span>🍜</span>Chinese
+        </button>
+        <button class="category" data-category="Dessert">
+          <span>🍰</span>Desserts
+        </button>
+        <button class="category" data-category="South Indian">
+          <span>🥞</span>South Indian
+        </button>
+      </div>
+    </section>
+
+    <section class="container restaurant-section" id="restaurants">
+      <h2>Best restaurants near you</h2>
+      <p class="section-subtitle">Explore popular places to eat</p>
+      <div id="restaurantGrid" class="restaurant-grid"></div>
+      <p id="noResults" class="no-results" hidden>
+        No restaurants found. Try another search.
+      </p>
+    </section>
+
+    <section class="container about" id="about">
+      <h2>About this website</h2>
+      <p>
+        Discover restaurants, explore food categories and find your
+        favourite dishes in one place. This is a student-made,
+        Zomato-inspired demo website.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <a class="logo" href="#">zomato</a>
+      <p>Discover great food, every day.</p>
+      <p>Student project · Zomato-inspired demo</p>
+      <p>© 2026 Food Discovery Website</p>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast" role="status"></div>
+  <script src="script.js"></script>
+</body>
+</html>
